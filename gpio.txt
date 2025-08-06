@@ -1,0 +1,56 @@
+import RPi.GPIO as GPIO
+import time
+import tkinter as tk
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(20, GPIO.OUT)
+GPIO.setup(26, GPIO.OUT)
+GPIO.setup(21, GPIO.OUT)
+
+
+def lights_control(light_num, master=False):
+    c = 1
+    cm = 1
+    if master:
+        for i in light_num:
+            if cm % 2 == 1:
+                GPIO.output(int(i), True)
+                time.sleep(2)
+            else:
+                GPIO.output(int(i), False)
+                time.sleep(2)
+
+    else:
+        if c % 2 == 1:
+            GPIO.output(int(light_num), True)
+            time.sleep(2)
+        elif c % 2 == 0:
+            GPIO.output(int(light_num), False)
+            time.sleep(2)
+
+
+top = tk.Tk()
+but1 = tk.Button(top, text="Light 1", command=lambda: lights_control(20))
+but2 = tk.Button(top, text="Light 2", command=lambda: lights_control(21))
+but3 = tk.Button(top, text="Light 3", command=lambda: lights_control(26))
+but4 = tk.Button(top, text="Master", command=lambda: lights_control([20, 21, 26], True))
+
+but1.pack()
+but2.pack()
+but3.pack()
+
+
+try:
+    while True:
+
+
+
+
+
+
+
+        top.mainloop()
+
+
+finally:
+    GPIO.cleanup()

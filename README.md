@@ -7,7 +7,7 @@
 
 ## 📌 Abstract
 
-With rising energy consumption and the need for more sustainable homes, **Homeio** was developed to enable smart automation of appliances — even without internet access. The system leverages local wireless control via Flask, and is capable of switching appliances like light bulbs using relays triggered by Raspberry Pi GPIO pins. The goal is simple: provide cost-effective, easy-to-use smart home automation to Indian households using open-source tools and off-the-shelf components.
+With rising energy consumption and the need for more sustainable homes, **Homeio** was developed to enable smart automation of appliances - even without internet access. The system leverages local wireless control via Flask, and is capable of switching appliances like light bulbs using relays triggered by Raspberry Pi GPIO pins. The goal is simple: provide cost-effective, easy-to-use smart home automation to Indian households using open-source tools and off-the-shelf components.
 
 ---
 
@@ -27,18 +27,18 @@ With rising energy consumption and the need for more sustainable homes, **Homeio
 - 📶 Local wireless access through a Flask-based web app  
 - 📱 Minimal, user-friendly web interface with ON/OFF toggle switches  
 - ⚡ Master switch to control all appliances at once  
-- 🔒 Secure private network access – no internet required  
+- 🔒 Secure private network access - no internet required  
 - 🧠 Compatible with smart bulbs and similar devices over the same LAN
 
 ---
 
 ## 🧰 Hardware Used
 
-- **Raspberry Pi 4B** – Core microcontroller & server
-- **Relay HAT (3-Channel)** – To switch appliances via GPIO
-- **3.5” LCD Display** – For local visual output (optional)
-- **Bayonet Holders & Light Bulbs** – Appliances for demo
-- **Connectors, Power Supply & Cabling** – Wiring setup
+- **Raspberry Pi 4B** - Core microcontroller & server
+- **Relay HAT (3-Channel)** - To switch appliances via GPIO
+- **3.5” LCD Display** - For local visual output (optional)
+- **Bayonet Holders & Light Bulbs** - Appliances for demo
+- **Connectors, Power Supply & Cabling** - Wiring setup
 
 ---
 
@@ -46,9 +46,9 @@ With rising energy consumption and the need for more sustainable homes, **Homeio
 
 - **Raspberry Pi OS (32-bit)**  
 - **Python (via Thonny IDE)**  
-- **Flask** – Lightweight Python web server  
+- **Flask** - Lightweight Python web server  
 - **LCDShow Drivers** – For 3.5” display control  
-- **GPIO & Time Libraries** – For relay management  
+- **GPIO & Time Libraries** - For relay management  
 
 ---
 
